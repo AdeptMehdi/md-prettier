@@ -1,0 +1,146 @@
+/* Custom styles for MD Prettier */
+
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+}
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.markdown-preview {
+    overflow-wrap: break-word;
+    line-height: 1.6;
+}
+
+.markdown-preview h1, .markdown-preview h2, .markdown-preview h3 {
+    color: #1f2937;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.markdown-preview p {
+    margin-bottom: 1em;
+}
+
+.markdown-preview code {
+    background-color: #f3f4f6;
+    padding: 0.125em 0.25em;
+    border-radius: 0.25rem;
+    font-size: 0.875em;
+}
+
+.markdown-preview pre {
+    background-color: #f3f4f6;
+    padding: 1em;
+    border-radius: 0.5rem;
+    overflow-x: auto;
+    margin: 1em 0;
+}
+
+.markdown-preview blockquote {
+    border-left: 4px solid #3b82f6;
+    padding-left: 1em;
+    margin: 1em 0;
+    color: #6b7280;
+    font-style: italic;
+}
+
+.dark .markdown-preview h1,
+.dark .markdown-preview h2,
+.dark .markdown-preview h3 {
+    color: #f9fafb;
+}
+
+.dark .markdown-preview code {
+    background-color: #374151;
+    color: #f9fafb;
+}
+
+.dark .markdown-preview pre {
+    background-color: #374151;
+    color: #f9fafb;
+}
+
+.dark .markdown-preview blockquote {
+    border-left-color: #60a5fa;
+    color: #d1d5db;
+}
+
+/* Animation for buttons */
+button {
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+.dark ::-webkit-scrollbar-track {
+    background: #1f2937;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+    background: #4b5563;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+    background: #6b7280;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .container {
+        padding: 1rem;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .flex-col.lg\:flex-row {
+        flex-direction: column;
+    }
+
+    .h-5\/6 {
+        height: auto;
+    }
+
+    textarea, #html-preview {
+        height: 300px;
+    }
+}
