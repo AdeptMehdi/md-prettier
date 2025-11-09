@@ -64,22 +64,11 @@ A modern, responsive web application that converts Markdown to beautiful HTML wi
 - Content Security Policy configured for CDNs
 - Sanitized HTML output (via Marked's built-in sanitization)
 
-## Deployment
+## Development
 
-### Local Development
 1. Install dependencies: `npm install`
 2. Start server: `npm start`
 3. Open `http://localhost:3000`
-
-### GitHub Pages Deployment
-1. Push code to GitHub repository
-2. Go to repository Settings > Pages
-3. Set source to "GitHub Actions"
-4. The workflow will automatically deploy on push to main branch
-5. Access at `https://yourusername.github.io/md-prettier`
-
-### Alternative Deployment
-You can also deploy to Vercel, Netlify, or any static hosting service by uploading the `public` folder contents.
 
 ## Testing
 Run tests with: `npm test`
