@@ -4,11 +4,16 @@
   "description": "A modern Markdown to HTML converter with live preview and additional features",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "jest"
   },
   "dependencies": {
     "express": "^4.18.2",
     "helmet": "^7.1.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3"
   },
   "keywords": ["markdown", "html", "converter", "express"],
   "author": "AdeptMahdi",

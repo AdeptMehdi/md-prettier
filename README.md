@@ -34,6 +34,11 @@ A modern, responsive web application that converts Markdown to beautiful HTML wi
 
 4. Open your browser and navigate to `http://localhost:3000`
 
+5. Run tests (optional):
+   ```bash
+   npm test
+   ```
+
 ## Usage
 
 1. Enter Markdown text in the left textarea
