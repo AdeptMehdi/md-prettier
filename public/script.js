@@ -183,6 +183,7 @@ infoBtn.addEventListener('click', () => {
         <li>Drag & drop .md files</li>
       </ul>
       <p>Version: 1.0.0</p>
+      <p><a href="https://github.com/AdeptMehdi/md-prettier" target="_blank">View on GitHub</a></p>
     `,
     icon: 'info',
     confirmButtonText: 'Got it!'
